@@ -1,10 +1,9 @@
 import requests
 from bs4 import BeautifulSoup, BeautifulStoneSoup
 import csv
-import time 
 
 url_1 = 'https://comic.naver.com/index'
-keyword = input('')
+keyword = input('최근 10화 제목과 평점이 궁금한 웹툰의 제목을 입력해주세요. =>')
 url_2 = 'https://comic.naver.com/search?keyword='+keyword
 
 res_1 = requests.get(url_2)
